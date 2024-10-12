@@ -9,28 +9,29 @@ const endNum = 100;
 
 for (let result = startNum; result <= endNum; result++) {
 
+    let num = document.getElementById("num")
     // se result è multiplo di 15 (quindi sia di 3 che di 5), stampo la stringa 'fizzbuzz' al posto del numero;
 
     if (result % 15 === 0){
-        console.log("fizzbuzz");
+        num.innerHTML = ("fizzbuzz");
         }
 
     // altrimenti se result è un multiplo di 3. stampo la stringa 'fizz' al posto del numero;
 
         else if (result % 3 === 0){
-        console.log("fizz");
+        num.innerHTML("fizz");
         }
 
     // altrimenti se result è multiplo di 5, stampo la stringa 'buzz' al posto del numero;
     
         else if (result % 5 === 0){ 
-        console.log("buzz");
+        num.innerHTML = ("buzz");
         }
 
     // altrimenti stampo result
 
     else 
-    console.log(result);
+    num.innerHTML(result);
 }
 
 // appena result raggiunge il valore di 100, esco dal ciclo.
